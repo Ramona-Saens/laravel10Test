@@ -6,5 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class item extends Model
 {
-    //
+    protected $fillable = [
+        'name',
+        'description',
+        'status',
+        'campus',
+        'location',
+        'date lost',
+        'date found',
+    ];
 }
